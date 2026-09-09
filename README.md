@@ -4,3 +4,4 @@ The 2026 Ferret Brain Meeting was organised in 2 Hubs across Baltimore and Paris
 
 It takes place 11 September 2026, at Institut Pasteur and Johns Hopkins University.
 
+![](images/landing/NeuroFerretMeeting.png)

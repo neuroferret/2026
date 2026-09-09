@@ -12,26 +12,14 @@ function openJit(id, name) {
   window.open("room.html#"+id+"."+name);
 }
 
-/*
-     width="7458.5156"
-     height="3400"
-     x="-1723.7458"
-     y="0"
-*/
+/* posters.json holds x/y/width/height already in overlay units -- 1000 of them
+   span the wall's full width, whatever resolution the dzi pyramid was built at
+   -- so there is nothing to rescale here. src/6_make_posters_json.py emits
+   them; see src/wall_config.py. */
 
 const displayPosters = (posters) => {
-  const [minx, maxx, miny] = [-1750, 5700, 0]; //[-6312.8579, 4021.7126, -4834.8994, 1477.1853];
-  const g = 1000/(maxx - minx);
   let svg = "";
-  let i =0;
   for (const p of posters) {
-    i += 1;
-    p.x = (p.x - minx)*g;
-    p.y = (p.y - miny)*g;
-    p.width *= g;
-    p.height *= g;
-    //     d="M${p.x},${p.y}h${p.width}v${p.height}h${-p.width}v${-p.height}"
-    // d="M${p.x},${p.y-10}h10v10h-10v-10"
     const [id, name] = p.pid.split("_");
     // svg += `<g id="nf26-${id}" transform="translate(${p.x},${p.y-13}) scale(0.2)">
     svg += `<g id="nf26-${id}" transform="translate(${p.x},${p.y - 13 }) scale(0.2)">

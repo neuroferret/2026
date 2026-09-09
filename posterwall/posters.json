@@ -1,0 +1,177 @@
+[
+  {
+    "pid": "1_FerretBrain2026",
+    "width": 3210,
+    "height": 2408,
+    "x": -1750,
+    "y": -10
+  },
+  {
+    "pid": "2_Barreto",
+    "width": 3611,
+    "height": 2408,
+    "x": 0,
+    "y": -10
+  },
+  {
+    "pid": "3_Boucher",
+    "width": 1703,
+    "height": 2408,
+    "x": 1950,
+    "y": -10
+  },
+  {
+    "pid": "4_Caporal",
+    "width": 1703,
+    "height": 2408,
+    "x": 2903,
+    "y": -10
+  },
+  {
+    "pid": "5_CasillasPerez",
+    "width": 3611,
+    "height": 2408,
+    "x": 3881,
+    "y": -10
+  },
+  {
+    "pid": "6_Csikos",
+    "width": 1727,
+    "height": 2441,
+    "x": -1750,
+    "y": 1335
+  },
+  {
+    "pid": "7_Dale",
+    "width": 1627,
+    "height": 2441,
+    "x": -760,
+    "y": 1335
+  },
+  {
+    "pid": "8_Goriachenkov",
+    "width": 1569,
+    "height": 2441,
+    "x": 180,
+    "y": 1335
+  },
+  {
+    "pid": "9_Gouyetteetal",
+    "width": 1727,
+    "height": 2441,
+    "x": 1091,
+    "y": 1335
+  },
+  {
+    "pid": "10_Haro",
+    "width": 1727,
+    "height": 2441,
+    "x": 2081,
+    "y": 1335
+  },
+  {
+    "pid": "11_Hillier",
+    "width": 1727,
+    "height": 2441,
+    "x": 3071,
+    "y": 1335
+  },
+  {
+    "pid": "12_Holland",
+    "width": 3256,
+    "height": 2441,
+    "x": 4061,
+    "y": 1335
+  },
+  {
+    "pid": "13_Horvath",
+    "width": 2015,
+    "height": 2848,
+    "x": -1750,
+    "y": 2696
+  },
+  {
+    "pid": "14_Hu",
+    "width": 3796,
+    "height": 2848,
+    "x": -615,
+    "y": 2696
+  },
+  {
+    "pid": "15_Keum",
+    "width": 3987,
+    "height": 2848,
+    "x": 1417,
+    "y": 2696
+  },
+  {
+    "pid": "16_Kong",
+    "width": 2027,
+    "height": 2848,
+    "x": 3545,
+    "y": 2696
+  },
+  {
+    "pid": "17_Lebeurier",
+    "width": 2015,
+    "height": 2848,
+    "x": 4686,
+    "y": 2696
+  },
+  {
+    "pid": "18_Lempel",
+    "width": 4570,
+    "height": 2559,
+    "x": -1750,
+    "y": 4264
+  },
+  {
+    "pid": "19_Liu",
+    "width": 1811,
+    "height": 2559,
+    "x": 671,
+    "y": 4264
+  },
+  {
+    "pid": "20_LEsperance",
+    "width": 3839,
+    "height": 2559,
+    "x": 1704,
+    "y": 4264
+  },
+  {
+    "pid": "21_Martin",
+    "width": 1811,
+    "height": 2559,
+    "x": 3757,
+    "y": 4264
+  },
+  {
+    "pid": "22_Norris",
+    "width": 1811,
+    "height": 2559,
+    "x": 4789,
+    "y": 4264
+  },
+  {
+    "pid": "23_Rickerl",
+    "width": 3200,
+    "height": 2400,
+    "x": -1750,
+    "y": 5685
+  },
+  {
+    "pid": "24_Smith",
+    "width": 3200,
+    "height": 2400,
+    "x": -18,
+    "y": 5685
+  },
+  {
+    "pid": "25_Soriano",
+    "width": 3600,
+    "height": 2400,
+    "x": 1713,
+    "y": 5685
+  }
+]

@@ -129,8 +129,8 @@ const main = async () => {
     navigatorAutoFade:  false,
     id: "openseadragon1",
     showNavigationControl: false,
-    tileSources: "dzi.js"
-    // tileSources: "https://microdraw.pasteur.fr/NeuroFerret2026/dzi.js"
+    // tileSources: "dzi.js"
+    tileSources: "https://microdraw.pasteur.fr/NeuroFerret2026/dzi.js"
   });
   
   viewer.bookmarkUrl();

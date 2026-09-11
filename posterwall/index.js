@@ -36,6 +36,11 @@ const displayPosters = (posters) => {
 }
 
 function updateOverlay() {
+  // 'resize' and 'update-viewport' can reach us before a tiled image exists,
+  // and getZoom() is meaningless until then.
+  if (!viewer || !viewer.world || viewer.world.getItemCount() === 0) {
+    return;
+  }
   const zoom = viewer.viewport.getZoom({current:true});
   const pan = viewer.viewport.getCenter({current:true});
   const svg = document.querySelector("#svg");
@@ -123,11 +128,26 @@ const main = async () => {
   
   viewer.bookmarkUrl();
 
+  /* The overlay's viewBox is derived from the viewport, so the markup can only
+     carry a placeholder (viewbox="0 0 1000 1000" in index.html). Nothing used
+     to replace it until the first zoom or pan, because those were the only two
+     events handled -- which is why the camera icons sat off their posters on a
+     fresh visit and snapped into place the moment you touched the viewer.
+     'open' covers the first paint; 'update-viewport' covers everything after,
+     including the home-zoom animation and a window resize.
+
+     Registered before the await below, so a tileSource that resolves quickly
+     cannot fire 'open' while posters.json is still in flight. */
+  viewer.addHandler('open', updateOverlay);
+  viewer.addHandler('update-viewport', updateOverlay);
+  viewer.addHandler('resize', updateOverlay);
+  viewer.addHandler('animation', updateOverlay);
+  viewer.addHandler('pan', updateOverlay);
+  window.addEventListener('resize', updateOverlay);
+
   const posters = await fetchPosters();
   displayPosters(posters);
-
-  viewer.addHandler('animation', () => {updateOverlay();});
-  viewer.addHandler('pan', () => {updateOverlay();});
+  updateOverlay();  // the bubbles only exist now; place them before first paint
 
   connectToWebsocket();
 }
